@@ -1,0 +1,1249 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Ambica Pharmacy</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/AMBICA PHARMA LOGO-RGB_pages-to-jpg-0001.jpg">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+		<style>.brands-section {
+			text-align: center;
+			padding: 40px 0;
+		}
+		
+		.scrollable-section {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-wrapper figure {
+    margin: 0;
+    flex: 0 0 auto; /* Ensure figures do not grow beyond their original size */
+}
+
+.carousel-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .image-carousel {
+        width: 100%;
+    }
+
+    .scroll-button {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+}
+
+		</style>
+
+		<script>document.addEventListener('DOMContentLoaded', function() {
+			const carousel = document.querySelector('.carousel-wrapper');
+			const scrollButtonLeft = document.querySelector('.scroll-button.left');
+			const scrollButtonRight = document.querySelector('.scroll-button.right');
+		
+			let scrollAmount = 0;
+			const scrollStep = 300; // Adjust this value for smoother or faster scrolling
+			const autoScrollInterval = 3000; // Auto-scroll interval in milliseconds
+		
+			let autoScrollTimer = null;
+		
+			// Function to handle auto-scroll
+			function startAutoScroll() {
+				autoScrollTimer = setInterval(() => {
+					scrollAmount += scrollStep;
+					if (scrollAmount > carousel.scrollWidth - carousel.clientWidth) {
+						scrollAmount = 0;
+					}
+					carousel.style.transform = `translateX(-${scrollAmount}px)`;
+				}, autoScrollInterval);
+			}
+		
+			// Start auto-scroll initially
+			startAutoScroll();
+		
+			// Pause auto-scroll on mouseover
+			carousel.addEventListener('mouseenter', function() {
+				clearInterval(autoScrollTimer);
+			});
+		
+			// Resume auto-scroll on mouseleave
+			carousel.addEventListener('mouseleave', function() {
+				startAutoScroll();
+			});
+		
+			// Scroll right on button click
+			scrollButtonRight.addEventListener('click', function() {
+				scrollAmount += scrollStep;
+				if (scrollAmount > carousel.scrollWidth - carousel.clientWidth) {
+					scrollAmount = 0;
+				}
+				carousel.style.transform = `translateX(-${scrollAmount}px)`;
+			});
+		
+			// Scroll left on button click
+			scrollButtonLeft.addEventListener('click', function() {
+				scrollAmount -= scrollStep;
+				if (scrollAmount < 0) {
+					scrollAmount = carousel.scrollWidth - carousel.clientWidth;
+				}
+				carousel.style.transform = `translateX(-${scrollAmount}px)`;
+			});
+		});
+		
+		</script>
+		
+    </head>
+	
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button
+		<ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul> -->
+	
+		<!-- Header Area -->
+		<header class="header">
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<a href="index.html"><img src="img/AMBICA PHARMA LOGO-RGB_pages-to-jpg-0001.jpg" alt="Ambica Pharma Logo" style="width: 180px; height: auto;"></a>
+								<div class="mobile-nav"></div>
+							</div>
+							<div class="col-lg-7 col-md-9 col-12 d-flex align-items-center">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="index.html">Home</a></li>
+											<li><a href="blog-single.html">Blog</a></li>
+											<li><a href="about.html">About Us <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="portfolio-details.html">Director-Info</a></li>
+													<li><a href="404.html">Our Team</a></li>
+													<li><a href="career.html">Careers</a></li>
+
+												</ul>
+											</li>
+											<li><a href="csr.html">CSR</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+											 
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/cart.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+									<p>Pharmaceuticals manufactures more than 1000+ Pharmaceutical Formulation Products in the form of Tablets, Capsules, Dry syrups, Liquid Orals, Injections, Eye/Ear Drops, Cosmetics and Sustained Release Preparations. </p>
+									<div class="button">
+										<a href="contact.html" class="btn">Get Medicines</a>
+										<a href="about.html" class="btn primary">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/needle.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+									<p>Welcome to Ambica Pharmacy, where compassionate care meets expert service, we are dedicated to providing personalized healthcare solutions tailored to your needs. Trust us for reliable prescriptions, friendly advice, and a commitment to your well-being. </p>
+									<div class="button">
+										<a href="contact.html" class="btn">Get Medicines</a>
+										<a href="about.html" class="btn primary">About Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/medicineinjection.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+									<p>Pharmaceuticals manufactures more than 1000+ Pharmaceutical Formulation Products in the form of Tablets, Capsules, Dry syrups, Liquid Orals, Injections, Eye/Ear Drops, Cosmetics and Sustained Release Preparations. </p>
+									<div class="button">
+										<a href="contact.html" class="btn">Get Medicines</a>
+										<a href="contact.html" class="btn primary">Contact Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		
+		<!-- Start Schedule Area -->
+		<!-- <section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<span>Lorem Amet</span>
+										<h4>Emergency Cases</h4>
+										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							 
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<span>Fusce Porttitor</span>
+										<h4>Doctors Timetable</h4>
+										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							 
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<span>Donec luctus</span>
+										<h4>Opening Hours</h4>
+										<ul class="time-sidual">
+											<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+											<li class="day">Saturday <span>9.00-18.30</span></li>
+											<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+										</ul>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+
+		<div></div>
+		<br>
+		<!-- <style>
+			.page-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh; /* Ensure the container takes up the full viewport height */
+				background-color: #f0f0f0; /* Background color for the page */
+				font-family: Arial, sans-serif; /* Font family for the page */
+				padding: 20px; /* Optional: Add padding to the page container */
+			}
+		
+			.discount_section {
+				background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+				max-width: 400px;
+				text-align: center;
+				transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+			}
+		
+			.discount_section:hover {
+				transform: scale(1.05);
+				box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+				background-color: rgba(255, 255, 255, 1); /* Solid white background on hover */
+			}
+		
+			.detail-box {
+				padding: 20px;
+			}
+		
+			.detail-box h2 {
+				font-size: 28px;
+				color: #333;
+				margin-bottom: 20px;
+			}
+		
+			.detail-box span {
+				color: #e74c3c; /* Custom color for the discount */
+				font-weight: bold;
+				font-size: 32px; /* Larger font size for emphasis */
+			}
+		</style>
+		
+		<div class="discount_section">
+			<div class="detail-box">
+				<h2>
+					You get <br>
+					any medicine <br>
+					on
+					<span>
+						10% discount
+					</span>
+				</h2>
+			</div>
+		</div> -->
+		
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Are Always Ready to Help You & Your Family</h2>
+							<img src="img/section-img.png" alt="#">
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-ambulance-cross"></i>
+							</div>
+							<h3>Fast Delivery</h3>
+							<!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-medical-sign-alt"></i>
+							</div>
+							<h3>Quality Products</h3>
+							<!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features last">
+							<div class="signle-icon">
+								<i class="icofont icofont-stethoscope"></i>
+							</div>
+							<h3>All Medicines</h3>
+							<!-- <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p> -->
+						</div>
+						<!-- End Single features -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Feautes -->
+		
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<!-- 
+						 -->
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-user-alt-3"></i>
+							<div class="content">
+								<span class="counter">18</span>
+								<p>Years of Manufacturing & Marketing</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-simple-smile"></i>
+							<div class="content">
+								<span class="counter">1242379</span>
+								<p>Happy Customers</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-table"></i>
+							<div class="content">
+								<span class="counter">22</span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Fun-facts -->
+		
+		<!-- Start Why choose -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Provide Different Services To Improve Your Health</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>We offer a diverse array of products that consistently adhere to globally accredited quality standards. Our dedicated departmental executives oversee operations to guarantee efficient and timely completion of all tasks.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>Who We Are</h3>
+ 							<p>Incepted in the year 2005, Ambica Pharma is an eminent entity indulged in manufacturing, trading, exporting, wholesaling and retailing a huge compilation of Pharmaceutical Tablets, Capsules, injectables, Drops, Ointments, etc. Manufactured making use of supreme in class material and progressive tools and technology; these are in conformism with the norms and guidelines defined by the market.  
+							</p>
+							<p>With a motive to stand high on the visions of our patrons, we are indulged in providing a huge array of products to our patrons, which are in tandem with the comprehensively accredited standards of quality. Along with this, all our departments are managed by their respective executives to ensure that all the responsibilities are getting finished effectively within the assured time. Since our inception, we are working under the supervision of our skilled mentor His enormous knowledge and information in this domain have directed us in becoming one of the well-known suppliers of the industry.
+							</p>
+							<!-- <div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
+										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
+										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
+										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
+										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+									</ul>
+								</div>
+							</div> -->
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<!-- Video Animation -->
+								<div class="promo-video">
+									<div class="waves-block">
+										<div class="waves wave-1"></div>
+										<div class="waves wave-2"></div>
+										<div class="waves wave-3"></div>
+									</div>
+								</div>
+								<!--/ End Video Animation -->
+								<a href="https://www.youtube.com/watch?v=VZyeSy7yxR8" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Why choose -->
+		
+		<!-- Start Call to action -->
+		<section class="call-action overlay" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="content">
+							<h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+							<div class="button">
+								<a href="contact.html" class="btn">Contact Now</a>
+								<a href="about.html" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Call to action -->
+		
+		<!-- Start portfolio -->
+		<!-- <section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							<div class="single-pf">
+								<img src="img/pf1.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf2.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf3.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf4.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf1.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf2.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf3.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pf4.jpg" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		<!-- </section> -->
+		<!--/ End portfolio -->
+		
+		<!-- Start service -->
+		<!-- <section class="services section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Offer Different Services To Improve Your Health</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-prescription"></i>
+							<h4><a href="service-details.html">On time delivery</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-tooth"></i>
+							<h4><a href="service-details.html">Flexible payment modes</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-heart-alt"></i>
+							<h4><a href="service-details.html">Huge distribution network
+							</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-listening"></i>
+							<h4><a href="service-details.html">Ear Treatment</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-eye-alt"></i>
+							<h4><a href="service-details.html">Ethical business strategies</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						 
+						<div class="single-service">
+							<i class="icofont icofont-blood"></i>
+							<h4><a href="service-details.html">Blood Transfusion</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+						</div>
+						 
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!--/ End service -->
+		
+		<!-- Pricing Table -->
+		<!-- <section class="pricing-table section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Provide You The Best Treatment In Resonable Price</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				 
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+					 
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div>
+								<h4 class="title">Plastic Suggery</h4>
+								<div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	
+							</div>
+					 
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
+								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Nullam interdum enim</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
+							</ul>
+							<div class="table-bottom">
+								<a class="btn" href="#">Book Now</a>
+							</div>
+						 
+						</div>
+					</div>
+				 
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+						 
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont icofont-tooth"></i>
+								</div>
+								<h4 class="title">Teeth Whitening</h4>
+								<div class="price">
+									<p class="amount">$299<span>/ Per Visit</span></p>
+								</div>	
+							</div>
+							 
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
+								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
+								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
+							</ul>
+							<div class="table-bottom">
+								<a class="btn" href="#">Book Now</a>
+							</div>
+						 
+						</div>
+					</div>
+					 
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							 
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-heart-beat"></i>
+								</div>
+								<h4 class="title">Heart Suggery</h4>
+								<div class="price">
+									<p class="amount">$399<span>/ Per Visit</span></p>
+								</div>	
+							</div>
+						 
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
+								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
+								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
+								<li><i class="icofont icofont-ui-check"></i>Donec ultricies metus</li>
+								<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
+							</ul>
+							<div class="table-bottom">
+								<a class="btn" href="#">Book Now</a>
+							</div>
+						 
+						</div>
+					</div>
+				 
+				</div>	
+			</div>	
+		</section>	 -->
+		<!--/ End Pricing Table -->
+		
+		
+		
+		<!-- Start Blog Area -->
+		<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Keep up with Our Most Recent Medical News.</h2>
+							<img src="img/section-img.png" alt="#">
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/medicinedark.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">22 Aug, 2020</div>
+									<h2><a href="blog-single.html">We have announced our new breakthrough medication, Elixarol.</a></h2>
+									<p class="text">Elixarol, our latest pharmaceutical innovation, promises groundbreaking advancements in pain management and patient care. Developed after years of rigorous research and testing, Elixarol offers a revolutionary approach to chronic pain relief, setting a new standard in pharmaceutical excellence.</p>
+								</div>
+								
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/medicineinjection.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">15 Jul, 2020</div>
+									<h2><a href="blog-single.html">Effective Methods for Chronic Pain Management</a></h2>
+									<p class="text">Discover proven strategies to alleviate chronic pain without relying solely on traditional medications. From physical therapy techniques to mindfulness practices, learn how holistic approaches can complement pharmaceutical treatments for enhanced patient care.</p>
+								</div>
+								
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/dark.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="blog-single.html">Advancing Pharmaceutical Business Solutions</a></h2>
+									<p class="text">Discover our comprehensive business solutions designed to optimize operations and drive growth in the pharmaceutical sector. From strategic partnerships to innovative technology integrations, we are committed to advancing healthcare delivery and patient outcomes.</p>
+								</div>
+								
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Blog Area -->
+
+		<section class="scrollable-section">
+			<div class="section-title">
+				<h2>We Deal with these Brands</h2>
+			<div class="image-carousel">
+				<div class="carousel-wrapper">
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/timinta.png" alt="timinta"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/nutrajohn.png" alt="nutrajohn"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/duphastar.png" alt="duphastar"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/timinta.png" alt="timinta" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/nutrajohn.png" alt="nutrajohn" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/duphastar.png" alt="duphastar" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/leemether.png" alt="leemether" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/telgo.png" alt="telgo" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/orlijohn.png" alt="orlijohn" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/ibuquick.png" alt="ibuquick" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/ors.png" alt="ors" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/cure-stress.png" alt="cure-stress" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/morris.png" alt="morris" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/am-dine.png" alt="am-dine" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/euputic.png" alt="euputic" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/budelite.png" alt="budelite" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/scalian.png" alt="scalian" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/alpha-kt.png" alt="alpha-kt" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/timinta.png" alt="timinta"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/nutrajohn.png" alt="nutrajohn"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/duphastar.png" alt="duphastar"></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/timinta.png" alt="timinta" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/nutrajohn.png" alt="nutrajohn" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/duphastar.png" alt="duphastar" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/leemether.png" alt="leemether" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/telgo.png" alt="telgo" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/orlijohn.png" alt="orlijohn" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/ibuquick.png" alt="ibuquick" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/ors.png" alt="ors" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/cure-stress.png" alt="cure-stress" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/morris.png" alt="morris" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/am-dine.png" alt="am-dine" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/euputic.png" alt="euputic" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/budelite.png" alt="budelite" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/scalian.png" alt="scalian" /></figure>
+					<figure><img src="https://johnleeindia.com/wp-content/uploads/2024/06/alpha-kt.png" alt="alpha-kt" /></figure>
+					<!-- Add more figures as needed -->
+				</div>
+			</div>
+			<button class="scroll-button left" aria-label="Scroll left">&lt;</button>
+			<button class="scroll-button right" aria-label="Scroll right">&gt;</button>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		<!-- Start clients -->
+		<!-- <div class="clients overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="owl-carousel clients-slider">
+							<div class="single-clients">
+								<img src="img/emcure (2).png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/abott.png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/johnlee.jpg" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/cipla.png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/mankind.png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/emcure (2).png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/abott.png" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/johnlee.jpg" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="img/cipla.png" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!--/Ens clients -->
+		
+		<!-- Start Appointment -->
+		<section class="appointment">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Are Always Ready to Help You. Book An Appointment</h2>
+							<img src="img/section-img.png" alt="#">
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-12">
+						<form class="form" action="#">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Name">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Phone">
+									</div>
+								</div>
+								<!-- <div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<div class="nice-select form-control wide" tabindex="0"><span class="current">Department</span>
+											<ul class="list">
+												<li data-value="1" class="option selected ">Department</li>
+												<li data-value="2" class="option">Cardiac Clinic</li>
+												<li data-value="3" class="option">Neurology</li>
+												<li data-value="4" class="option">Dentistry</li>
+												<li data-value="5" class="option">Gastroenterology</li>
+											</ul>
+										</div>
+									</div>
+								</div> -->
+								<!-- <div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<div class="nice-select form-control wide" tabindex="0"><span class="current">Doctor</span>
+											<ul class="list">
+												<li data-value="1" class="option selected ">Doctor</li>
+												<li data-value="2" class="option">Dr. Akther Hossain</li>
+												<li data-value="3" class="option">Dr. Dery Alex</li>
+												<li data-value="4" class="option">Dr. Jovis Karon</li>
+											</ul>
+										</div>
+									</div>
+								</div> -->
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input type="text" placeholder="Date" id="datepicker">
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-12">
+									<div class="form-group">
+										<div class="button">
+											<button type="submit" class="btn">Book An Appointment</button>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="col-lg-7 col-md-8 col-12">
+									<p>( We will be confirm by an Text Message )</p>
+								</div> -->
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6 col-md-12 ">
+						<div class="appointment-image">
+							<img src="img/newcontact.jpeg" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Appointment -->
+		
+		<!-- Start Newsletter Area -->
+		<section class="newsletter section">
+			<div class="container">
+				<div class="row ">
+					<div class="col-lg-6  col-12">
+						<!-- Start Newsletter Form -->
+						<div class="subscribe-text ">
+							<h6>Sign up for newsletter</h6>
+							<p class="">Discover excellence in pharmaceutical manufacturing and distribution at Ambica Pharma, where quality meets commitment since 2005.</p>
+						</div>
+						<!-- End Newsletter Form -->
+					</div>
+					<div class="col-lg-6  col-12">
+						<!-- Start Newsletter Form -->
+						<div class="subscribe-form ">
+							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Your email address'" required="" type="email">
+								<button class="btn">Subscribe</button>
+							</form>
+						</div>
+						<!-- End Newsletter Form -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /End Newsletter Area -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Discover excellence in pharmaceutical manufacturing and distribution at Ambica Pharma, where quality meets commitment since 2005.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-instagram"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+											<li><a href="blog-single.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Registered Office</h2>
+								<p>Registered Office AMBICA PHARMA
+									Shop no:22 to 25,2nd Floor, 
+									Chapsey Building, 
+									72/78, Shamaldas Gandhi Marg, Kalbadevi, Mumbai, 
+									Maharashtra-400 002</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Contact us</h2>
+								<p>Mob: +91 9967006091</p>
+								<p>ambicapharma@gmail.com</p>
+								<br>
+								<p>Subscribe to our newsletter to get all our news in your inbox.</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2024 | All Rights Reserved by <a href="https://visheshsanghvi.netlify.app" target="_blank">Ambica Pharma</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
