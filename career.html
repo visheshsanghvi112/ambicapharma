@@ -42,7 +42,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
 
-        <style><style>
+        <style> 
             /* Scoped CSS for Our Culture Section */
             #our-culture {
                 padding: 80px 0;
@@ -67,7 +67,7 @@
             
             .culture-content p {
                 font-size: 18px;
-                color: #666;
+                color: #000000;
                 line-height: 1.6;
                 margin-bottom: 20px;
             }
@@ -147,19 +147,6 @@
                 }
             }
             </style>
-            </style>
-        
-
-       
-
-            <script>document.getElementById("join-form").addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent default form submission
-            
-                // You can add your logic here for form submission, e.g., AJAX request
-                alert("Form submitted successfully!"); // Example alert, replace with your handling code
-            });
-            </script>
-		
     </head>
     <body>
 	
@@ -178,8 +165,7 @@
             </div>
         </div>
         <!-- End Preloader -->
-		
-		 
+	 
 	
 		<!-- Header Area -->
 		<header class="header">
@@ -204,7 +190,7 @@
 												<ul class="dropdown">
 													<li><a href="portfolio-details.html">Director-Info</a></li>
 													<li><a href="404.html">Our Team</a></li>
-													<li><a href="404.html">Careers</a></li>
+													<li><a href="career.html">Careers</a></li>
 
 												</ul>
 											</li>
@@ -243,42 +229,112 @@
 
         <br>
 
-        <section id="our-culture" class="our-culture-section">
-            <div class="culture-container">
-                <h2>Our Culture</h2>
-                <div class="culture-content">
-                    <p>Ambica Pharma believes its succession depends upon the dedication and synergy of its employees. Our culture is shaped by the certainty to work towards overcoming obstacles and commitment to care and serve with teamwork.</p>
-                    <p>Talented people who are driven to make Johnlee a leading pharmaceutical company with their Persistence, Potential, and Obsession for Improving Life are the chaperones of our journey till now.</p>
-                    <p>We are Johnlee. Become one of us.</p>
-                </div>
-                <div class="join-team">
-                    <h3>Join Our Team</h3>
-                    <form id="join-form">
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" required>
-        
-                        <label for="email">Your email</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="mobile">Mobile No.</label>
-                        <input type="tel" id="mobile" name="mobile" required>
-        
-                        <label for="position">Position Applied For</label>
-                        <input type="text" id="position" name="position" required>
-        
-                        <label for="resume">Upload Resume</label>
-                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-        
-                        <button type="submit">Submit</button>
-                    </form>
+        <!-- Job Openings Section -->
+<section id="job-openings" style="padding: 60px 0; background: #f5f5f5;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 30px;">Join Our Team</h2>
+        <p style="font-size: 18px; color: #666; margin-bottom: 50px;">Explore exciting career opportunities at Ambica Pharma and be part of a team that's shaping the future of healthcare.</p>
+
+        <!-- Job Cards -->
+        <div class="job-cards" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <!-- Job Role: Purchase Sales Executive -->
+            <div class="job-card" onclick="toggleDetails('role1')" style="background: #fff; border-radius: 8px; padding: 20px; width: 250px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Purchase Sales Executive</h3>
+                <p style="font-size: 14px; color: #666;">Manage client relationships, supply chain, and drive sales.</p>
+                <div id="role1" class="job-details" style="display: none; margin-top: 15px;">
+                    <p style="font-size: 14px; color: #333;">Experience: 2+ years in sales and purchase roles.<br> Skills: Negotiation, CRM tools, client handling.</p>
                 </div>
             </div>
-        </section>
+
+            <!-- Job Role: Software Developer -->
+            <div class="job-card" onclick="toggleDetails('role2')" style="background: #fff; border-radius: 8px; padding: 20px; width: 250px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Software Developer</h3>
+                <p style="font-size: 14px; color: #666;">Core PHP development with 2+ years of experience.</p>
+                <div id="role2" class="job-details" style="display: none; margin-top: 15px;">
+                    <p style="font-size: 14px; color: #333;">Experience: Minimum 2 years.<br> Skills: PHP, SQL, JavaScript, and problem-solving.</p>
+                </div>
+            </div>
+
+            <!-- Job Role: Digital Marketing Specialist -->
+            <div class="job-card" onclick="toggleDetails('role3')" style="background: #fff; border-radius: 8px; padding: 20px; width: 250px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Digital Marketing Specialist</h3>
+                <p style="font-size: 14px; color: #666;">Boost brand presence with creative campaigns.</p>
+                <div id="role3" class="job-details" style="display: none; margin-top: 15px;">
+                    <p style="font-size: 14px; color: #333;">Experience: 1+ years.<br> Skills: SEO, SEM, social media management, content creation.</p>
+                </div>
+            </div>
+
+            <!-- Job Role: Quality Analyst -->
+            <div class="job-card" onclick="toggleDetails('role4')" style="background: #fff; border-radius: 8px; padding: 20px; width: 250px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Quality Analyst</h3>
+                <p style="font-size: 14px; color: #666;">Ensure top-notch quality for all deliverables.</p>
+                <div id="role4" class="job-details" style="display: none; margin-top: 15px;">
+                    <p style="font-size: 14px; color: #333;">Experience: 2+ years.<br> Skills: Testing methodologies, tools like Selenium, and attention to detail.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Application Form -->
+        <div id="application-form" style="margin-top: 60px; text-align: left; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 800px; margin: 60px auto;">
+            <h3 style="font-size: 28px; font-weight: bold; margin-bottom: 20px; text-align: center;">Submit Your Application</h3>
+            <form id="join-form">
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="font-size: 16px; font-weight: bold;">Your Name</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="font-size: 16px; font-weight: bold;">Your Email</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="mobile" style="font-size: 16px; font-weight: bold;">Mobile No.</label>
+                    <input type="tel" id="mobile" name="mobile" required style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="position" style="font-size: 16px; font-weight: bold;">Position Applied For</label>
+                    <input type="text" id="position" name="position" required style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="resume" style="font-size: 16px; font-weight: bold;">Upload Resume</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <button type="submit" style="padding: 12px 24px; font-size: 16px; color: #fff; background: #333; border: none; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 20px;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Script for Animations -->
+<script>
+    function toggleDetails(roleId) {
+        const details = document.getElementById(roleId);
+        const isVisible = details.style.display === 'block';
+
+        // Hide all other details
+        document.querySelectorAll('.job-details').forEach(detail => detail.style.display = 'none');
+
+        // Show/hide selected details
+        details.style.display = isVisible ? 'none' : 'block';
+    }
+
+    // Card hover effect
+    document.querySelectorAll('.job-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.05)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
         
-        
-	
-		 
-		
+  
 		<!-- Footer Area -->
 <footer id="footer" class="footer">
     <!-- Footer Top -->
@@ -353,6 +409,28 @@
     <!--/ End Copyright -->
 </footer>
 <!--/ End Footer Area -->
+
+<script>document.getElementById("join-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // You can add your logic here for form submission, e.g., AJAX request
+    alert("Form submitted successfully!"); // Example alert, replace with your handling code
+});
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/67762568af5bfec1dbe5a9b6/1igio48kg';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 
 		
 		<!-- jquery Min JS -->
