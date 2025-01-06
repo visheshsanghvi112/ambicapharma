@@ -1,6 +1,6 @@
 /* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
+Template Name: Ambica Pharma.
+Author Name: Vishesh Sanghvi
 Website: http://wpthemesgrid.com/
 Description: Mediplus - Doctor HTML Template.
 Version:	1.1

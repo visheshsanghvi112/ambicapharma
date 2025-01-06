@@ -157,6 +157,196 @@
             margin-bottom: 1rem; /* Space below the image */
         }
     </style>
+    <style>
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 40px 15px;
+            }
+    
+            .container {
+                padding: 20px;
+            }
+    
+            .container div {
+                margin-bottom: 20px;
+            }
+    
+            .left-column, .right-column {
+                flex: 1 1 100%;
+                min-width: 100%;
+            }
+    
+            h2 {
+                font-size: 28px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    
+        @media screen and (max-width: 480px) {
+            section {
+                padding: 30px 10px;
+            }
+    
+            h2 {
+                font-size: 24px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- Responsive Styling -->
+    <style>
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 40px 15px;
+            }
+    
+            .testimonial-container {
+                padding: 20px;
+            }
+    
+            .testimonial {
+                margin-bottom: 30px;
+            }
+    
+            h2 {
+                font-size: 30px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+    
+            .testimonial h3 {
+                font-size: 20px;
+            }
+    
+            .testimonial p {
+                font-size: 14px;
+            }
+    
+            form {
+                padding: 20px;
+            }
+    
+            input, textarea {
+                font-size: 14px;
+            }
+    
+            button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    
+        @media screen and (max-width: 480px) {
+            section {
+                padding: 30px 10px;
+            }
+    
+            h2 {
+                font-size: 26px;
+            }
+    
+            .testimonial h3 {
+                font-size: 18px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
+            .testimonial p {
+                font-size: 12px;
+            }
+    
+            form {
+                padding: 15px;
+            }
+    
+            input, textarea {
+                font-size: 14px;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- Responsive Styling -->
+    <style>
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 50px 15px;
+            }
+    
+            h2 {
+                font-size: 32px;
+            }
+    
+            .global-reach-container {
+                flex-direction: column;
+            }
+    
+            .global-reach-container > div {
+                margin-bottom: 30px;
+            }
+    
+            h3 {
+                font-size: 22px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+    
+            a {
+                font-size: 16px;
+                padding: 15px 30px;
+            }
+        }
+    
+        @media screen and (max-width: 480px) {
+            section {
+                padding: 30px 10px;
+            }
+    
+            h2 {
+                font-size: 28px;
+            }
+    
+            h3 {
+                font-size: 18px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
+            a {
+                font-size: 14px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
     
     
     
@@ -195,7 +385,7 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<li><a href="index.html">Home</a></li>
-											<li><a href="blog-single.html">Blog</a></li>
+											<!-- <li><a href="blog-single.html">Blog</a></li> -->
 											<li><a href="about.html">About Us <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="portfolio-details.html">Director-Info</a></li>
@@ -237,323 +427,334 @@
     </div>
     <!-- End Breadcrumbs -->
 
-<!-- Start Portfolio Details Area -->
-<section class="pf-details section">
-    <div class="container">
-
-        <!-- Company History Card -->
-        <div class="card mb-4">
-            <div class="card-body" data-toggle="collapse" data-target="#historyDetails" aria-expanded="false" aria-controls="historyDetails">
-                <h2 class="card-title">Company History</h2>
-            </div>
-            <div id="historyDetails" class="collapse" aria-labelledby="historyDetails" data-parent=".pf-details">
-                <div class="card-body">
-                    <!-- Additional details can go here -->
-                    <p class="card-text" style="font-size: 18px;">Founded in 2005, Ambica Pharma has grown from a small startup to a renowned name in the pharmaceutical industry, known for its commitment to excellence and innovation. This is to introduce ourselves as a professionally managed fast-growing Pharmaceutical Company having more than twelve years of manufacturing and marketing experience.
-                        We are based in Mumbai (Maharashtra), The Company has been accredited with ISO-9001-2015 and manufactures pharmaceutical formulations as per the guidelines of WHO. It is a (GMP Certified) Unit with total quality management and In-house Testing Laboratory.
-                        Our success is the result of focusing on our clients' top priorities such as quality products, on-time delivery, competitive rates, and unparalleled responsiveness. Johnlee Pharmaceuticals manufactures more than 1000+ Pharmaceutical Formulation Products in the form of Tablets, Capsules, Dry syrups, Liquid Orals, Injections, Eye/Ear Drops, Cosmetics, and Sustained Release Preparations.</p>
+    <section style="background: linear-gradient(to top left, #176ABC, #00BFFF); padding: 60px 0; border-radius: 20px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); margin: 30px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 30px; text-align: center;">
+            <!-- Title -->
+            <h2 style="font-size: 42px; font-weight: bold; color: #ffffff; margin-bottom: 30px;">Ambica Pharma - Since 2005</h2>
+    
+            <!-- Flex container for the content sections -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+                
+                <!-- Left Column -->
+                <div style="flex: 1; min-width: 300px; padding: 30px; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <p style="font-size: 20px; line-height: 1.8; color: #333; margin-bottom: 20px;">
+                        Ambica Pharma has evolved from a humble startup into a leading force in the pharmaceutical industry. With over 12 years of expertise, we pride ourselves on innovation, quality, and client satisfaction.
+                    </p>
+                    <p style="font-size: 20px; line-height: 1.8; color: #333;">
+                        As a professionally managed company, we focus on continuous growth, delivering pharmaceutical products that meet global standards while maintaining ethical practices and total quality management.
+                    </p>
+                </div>
+    
+                <!-- Right Column -->
+                <div style="flex: 1; min-width: 300px; padding: 30px; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <p style="font-size: 20px; line-height: 1.8; color: #333; margin-bottom: 20px;">
+                        Headquartered in Mumbai, Maharashtra, Ambica Pharma holds ISO-9001-2015 certification and follows stringent WHO guidelines for production. Our GMP-certified unit ensures quality at every step, from formulation to delivery.
+                    </p>
+                    <p style="font-size: 20px; line-height: 1.8; color: #333;">
+                        With over 1000+ formulations—ranging from tablets and capsules to syrups, injections, and cosmetics—we ensure the highest quality, timely delivery, and competitive pricing to exceed customer expectations.
+                    </p>
                 </div>
             </div>
         </div>
+    </section>
+    
+    
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 40px;">
+            <button style="padding: 15px 30px; font-size: 18px; color: #fff; background: #176ABC; border: none; border-radius: 10px; cursor: pointer; transition: background 0.3s, transform 0.2s; transform: scale(1);">
+                Learn More About Us
+            </button>
+        </div>
+    </section>
 
-        <!-- Our Mission Card -->
-<div class="card mb-4">
-    <div class="card-body" data-toggle="collapse" data-target="#missionDetails" aria-expanded="false" aria-controls="missionDetails">
-        <h2 class="card-title">Our Mission</h2>
-    </div>
-    <div id="missionDetails" class="collapse" aria-labelledby="missionDetails" data-parent=".pf-details">
-        <div class="card-body">
-            <!-- Additional details can go here -->
-            <p class="card-text" style="font-size: 18px;">
-                At Ambica Pharma, we are dedicated to:
-            </p>
-            <div class="mission-list">
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Striving for exceptional performance and uncompromising quality."</p>
-                    <footer class="blockquote-footer">Mission for Excellence</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Fostering creativity and continuous improvement through innovation."</p>
-                    <footer class="blockquote-footer">Mission for Innovation</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Exceeding customer expectations with reliable products and services."</p>
-                    <footer class="blockquote-footer">Mission for Customer Satisfaction</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Building a strong identity based on ethical practices and customer value."</p>
-                    <footer class="blockquote-footer">Mission for Corporate Responsibility</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Embracing flexibility and robustness to navigate change and challenges."</p>
-                    <footer class="blockquote-footer">Mission for Adaptability</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Nurturing our team with human-centric management principles."</p>
-                    <footer class="blockquote-footer">Mission for Team Empowerment</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Driving operational excellence through strategic selection and innovation."</p>
-                    <footer class="blockquote-footer">Mission for Efficiency</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Enhancing corporate value through openness and accountability."</p>
-                    <footer class="blockquote-footer">Mission for Transparency</footer>
-                </blockquote>
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Upholding honesty, ethics, and fairness in all our dealings."</p>
-                    <footer class="blockquote-footer">Mission for Integrity</footer>
-                </blockquote>
+    <br>
+ 
+    <section style="background: linear-gradient(135deg, #2980b9, #2ecc71); color: white; padding: 80px 20px; text-align: center; position: relative; overflow: hidden;">
+        <!-- Background Graphics -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.1; background-image: url('https://via.placeholder.com/1500'); background-size: cover;"></div>
+        
+        <div style="position: relative; z-index: 2; max-width: 1200px; margin: auto;">
+            <!-- Section Title -->
+            <h1 style="font-size: 50px; font-weight: bold; text-transform: uppercase; margin-bottom: 50px; letter-spacing: 4px; color: white;">Our Mission & Vision</h1>
+    
+            <!-- Mission Section -->
+            <div style="margin-bottom: 50px; padding: 50px; border-radius: 20px; background: rgb(255, 255, 255);">
+                <h2 style="font-size: 38px; font-weight: bold; color: #f1c40f; margin-bottom: 25px;">Mission</h2>
+                <p style="font-size: 22px; line-height: 1.8; font-weight: 500;">
+                    To revolutionize healthcare by delivering high-quality, affordable, and innovative pharmaceutical products that enrich lives and improve global well-being. We are driven by a passion for excellence, a commitment to sustainability, and a vision to create a healthier future for all.
+                </p>
             </div>
-            <div class="text-center mt-4">
-                <img src="path/to/mission-image.jpg" alt="Mission Image" class="img-fluid rounded">
-                <p class="mt-2">Illustration of our commitment to excellence and innovation.</p>
+    
+            <!-- Vision Section -->
+            <div style="padding: 50px; border-radius: 20px; background: rgb(255, 255, 255);">
+                <h2 style="font-size: 38px; font-weight: bold; color: #e74c3c; margin-bottom: 25px;">Vision</h2>
+                <p style="font-size: 22px; line-height: 1.8; font-weight: 500;">
+                    To become a global beacon of pharmaceutical innovation and quality, setting the gold standard for excellence. We aspire to make advanced healthcare accessible to every corner of the world, empowering communities and creating a lasting legacy of trust and impact.
+                </p>
             </div>
         </div>
-    </div>
-</div>
-
-
-        <!-- Director Section -->
-<div class="card mb-4">
-    <div class="card-body" data-toggle="collapse" data-target="#directorDetails" aria-expanded="false" aria-controls="directorDetails">
-        <h2 class="card-title">Founder & Chairman, Ambica Pharma</h2>
-    </div>
-    <div id="directorDetails" class="collapse" aria-labelledby="directorDetails" data-parent=".pf-details">
-        <div class="card-body" style="text-align: center;">
-            <!-- Additional details can go here -->
-            <img src="img/dilipsir2.png" alt="Dilip Jain" class="img-fluid rounded-circle mb-3" style="width: 600px; height: 500px;">
-            <p class="card-text" style="font-size: 18px;">
-                One such phenomenon is Mr. Dilip Jain (Founder & Chairman, Ambica Pharma), who has maneuvered the foundation and evolution of his firm Ambica Pharma as one of the exceptionally managed and exponentially growing pharmaceutical companies having more than 18 years of manufacturing and marketing experience. During his more than 22 years of experience in the Pharma industry as an industry leader, Mr. Dilip Jain garnered a wide range of expertise in sales, marketing, and creating distribution networks on a Pan India basis. Implementing his acquired professional skills to lay a strategic grid that ultimately catapulted the evolution of Johnlee Pharmaceuticals as a leading brand of pharmaceutical and life sciences domain, Mr. Dilip Jain has led the firm to focus on high growth potential segments like generic medicines.
-            </p>
-            <p class="card-text" style="font-size: 18px;">
-                Mr. Dilip Jain's visionary leadership continues to drive Ambica Pharma's commitment to innovation, quality, and customer satisfaction, positioning the company as a key player in the pharmaceutical industry.
-            </p>
-        </div>
-    </div>
-</div>
-
-
-        <!-- Quality Assurance Card -->
-<div class="card mb-4">
-    <div class="card-body" data-toggle="collapse" data-target="#qualityDetails" aria-expanded="false" aria-controls="qualityDetails">
-        <h2 class="card-title">Quality Assurance</h2>
-    </div>
-    <div id="qualityDetails" class="collapse" aria-labelledby="qualityDetails" data-parent=".pf-details">
-        <div class="card-body">
-            <!-- Additional details can go here -->
-            <p class="card-text" style="font-size: 18px;">
-                At Ambica Pharma, quality assurance is at the core of everything we do. We employ rigorous quality control measures to ensure that every product meets and exceeds industry standards. Our commitment to quality is supported by state-of-the-art manufacturing facilities and a team of dedicated professionals who bring years of expertise to the table.
-            </p>
-            <p class="card-text" style="font-size: 18px;">
-                We continuously invest in technology and training to maintain our high standards and ensure customer satisfaction. Our quality assurance processes cover every aspect of production, from sourcing raw materials to final product testing, ensuring consistency and reliability in every batch.
-            </p>
-        </div>
-    </div>
-</div>
-
-
-        <!-- Global Reach Card -->
-        <div class="card mb-4">
-            <div class="card-body" data-toggle="collapse" data-target="#globalReachDetails" aria-expanded="false" aria-controls="globalReachDetails">
-                <h2 class="card-title">Global Reach</h2>
+    </section>
+    <section style="background: linear-gradient(to top left, #176ABC, #00BFFF); padding: 60px 0; border-radius: 20px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); margin: 30px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; color: white;">
+            <h2 style="font-size: 40px; font-weight: bold; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;">Our Global Reach</h2>
+    
+            <!-- Animated Grid Layout -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 40px; animation: fadeIn 1.5s ease-in-out;">
+                <!-- Country Cards with Hover Effects -->
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">India</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Serving across all regions with a commitment to innovation and excellence.</p>
+                    <img src="https://via.placeholder.com/200" alt="India" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">United States</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Leading the way with extensive market presence and innovative solutions.</p>
+                    <img src="https://via.placeholder.com/200" alt="United States" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">Germany</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Pioneering pharmaceutical innovations and excellence in Europe.</p>
+                    <img src="https://via.placeholder.com/200" alt="Germany" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">Brazil</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Delivering high-quality products across South America with a strong market presence.</p>
+                    <img src="https://via.placeholder.com/200" alt="Brazil" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">China</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Expanding across Asia with cutting-edge technology and quality standards.</p>
+                    <img src="https://via.placeholder.com/200" alt="China" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; overflow: hidden; position: relative;">
+                    <h3 style="font-size: 24px; font-weight: bold; color: #176ABC;">Australia</h3>
+                    <p style="font-size: 18px; color: #333; margin: 20px 0;">Providing high-quality pharmaceuticals across Oceania with a global approach.</p>
+                    <img src="https://via.placeholder.com/200" alt="Australia" style="width: 100%; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3;">
+                </div>
             </div>
-            <div id="globalReachDetails" class="collapse" aria-labelledby="globalReachDetails" data-parent=".pf-details">
-                <div class="card-body">
-                    <!-- Additional details can go here -->
-                    <img src="img/medicines.jpg" class="card-img-top" alt="Medicines" data-toggle="collapse" data-target="#globalReachDetails" aria-expanded="false" aria-controls="globalReachDetails">
-                    <p class="card-text" style="font-size: 18px;">With distribution networks spanning across multiple continents, Ambica Pharma is proud to serve healthcare markets worldwide, ensuring access to essential medications.</p>
-                    <p class="card-text" style="font-size: 18px;">Our commitment to global health is reflected in our partnerships with international healthcare providers, governments, and NGOs. By leveraging our extensive logistics capabilities and cutting-edge technology, we deliver high-quality pharmaceuticals to even the most remote locations.</p>
-                    <p class="card-text" style="font-size: 18px;">Ambica Pharma’s global presence includes dedicated teams and facilities in North America, Europe, Asia, and Africa, working tirelessly to improve healthcare outcomes and make a positive impact on communities around the globe.</p>
-                    <p class="card-text" style="font-size: 18px;">Join us in our mission to enhance global healthcare through innovation, collaboration, and an unwavering commitment to quality.</p>
+    
+            <!-- Call to Action with Smooth Hover -->
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="contact.html" style="padding: 18px 40px; font-size: 20px; color: #fff; background: #176ABC; text-decoration: none; border-radius: 10px; cursor: pointer; transition: background 0.3s ease, transform 0.2s ease; transform: scale(1); display: inline-block; font-weight: bold;">
+                    Connect with Us Globally
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* Animation for Fade-in Effect */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    
+        /* Hover Effects on Country Cards */
+        .country-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    
+  
+    <section style="background: #f4f4f4; padding: 60px 0; border-radius: 20px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); margin: 30px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 36px; font-weight: bold; color: #176ABC; margin-bottom: 40px;">What Our Clients Say</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                <!-- Testimonial 1 -->
+                <div style="flex: 1; min-width: 300px; max-width: 400px; padding: 30px; text-align: center; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <p style="font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 20px;">"Ambica Pharma has been a trusted partner for years. Their products are top-notch, and their commitment to quality is unmatched."</p>
+                    <h3 style="font-size: 22px; font-weight: bold; color: #176ABC;">John Doe</h3>
+                    <p style="font-size: 16px; color: #777;">CEO, Health Corp</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div style="flex: 1; min-width: 300px; max-width: 400px; padding: 30px; text-align: center; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <p style="font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 20px;">"We’ve been using Ambica Pharma’s products for our projects, and the results are always impressive. They truly set the standard in the industry."</p>
+                    <h3 style="font-size: 22px; font-weight: bold; color: #176ABC;">Jane Smith</h3>
+                    <p style="font-size: 16px; color: #777;">Marketing Director, MedSolutions</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div style="flex: 1; min-width: 300px; max-width: 400px; padding: 30px; text-align: center; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <p style="font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 20px;">"Working with Ambica Pharma has been a pleasure. They consistently deliver excellent products and services, and we can always rely on them."</p>
+                    <h3 style="font-size: 22px; font-weight: bold; color: #176ABC;">Michael Johnson</h3>
+                    <p style="font-size: 16px; color: #777;">Operations Manager, PharmaWorld</p>
                 </div>
             </div>
         </div>
-
-        <!-- Awards and Recognitions Card -->
-        <div class="card mb-4">
-            <div class="card-body" data-toggle="collapse" data-target="#awardsDetails" aria-expanded="false" aria-controls="awardsDetails">
-                <h2 class="card-title">Awards and Recognitions</h2>
-            </div>
-            <div id="awardsDetails" class="collapse" aria-labelledby="awardsDetails" data-parent=".pf-details">
-                <div class="card-body">
-                    <!-- Additional details can go here -->
-                    <p class="card-text" style="font-size: 18px;">Ambica Pharma has been honored with several awards for its contributions to the pharmaceutical industry, recognizing its excellence in innovation and quality.</p>
+    
+        <!-- Add Your Testimonial Form -->
+        <div style="max-width: 1200px; margin: 50px auto; text-align: center;">
+            <h2 style="font-size: 36px; font-weight: bold; color: #176ABC; margin-bottom: 30px;">Share Your Testimonial</h2>
+            <form action="#" method="POST" style="background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="font-size: 18px; font-weight: bold; color: #333; display: block;">Your Name</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px;">
                 </div>
-            </div>
+    
+                <div style="margin-bottom: 20px;">
+                    <label for="company" style="font-size: 18px; font-weight: bold; color: #333; display: block;">Your Company</label>
+                    <input type="text" id="company" name="company" required style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+    
+                <div style="margin-bottom: 20px;">
+                    <label for="testimonial" style="font-size: 18px; font-weight: bold; color: #333; display: block;">Your Testimonial</label>
+                    <textarea id="testimonial" name="testimonial" rows="5" required style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                </div>
+    
+                <div style="margin-bottom: 20px;">
+                    <label for="photo" style="font-size: 18px; font-weight: bold; color: #333; display: block;">Your Photo (Optional)</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+    
+                <button type="submit" style="padding: 15px 30px; font-size: 18px; color: #fff; background: #176ABC; border: none; border-radius: 10px; cursor: pointer; transition: background 0.3s, transform 0.2s; transform: scale(1);">
+                    Submit Testimonial
+                </button>
+            </form>
         </div>
-
-        <!-- Customer Testimonials Card -->
-<div class="card mb-4">
-    <div class="card-body" data-toggle="collapse" data-target="#testimonialsDetails" aria-expanded="false" aria-controls="testimonialsDetails">
-        <h2 class="card-title">Customer Testimonials</h2>
-        <div class="testimonial">
-            <blockquote class="blockquote">
-                <p class="mb-0">"Ambica Pharma's commitment to quality and reliability is unmatched. Their products have made a significant difference in our healthcare services."</p>
-                <footer class="blockquote-footer">Dr. Sarah Smith, Healthcare Provider</footer>
-            </blockquote>
-        </div>
-        <div class="testimonial">
-            <blockquote class="blockquote">
-                <p class="mb-0">"We have been partnering with Ambica Pharma for years, and their consistent quality and service have been integral to our success."</p>
-                <footer class="blockquote-footer">Mr. John Doe, Business Owner</footer>
-            </blockquote>
-        </div>
-        <button class="btn btn-outline-primary btn-sm mt-3" data-toggle="collapse" data-target="#moreTestimonials" aria-expanded="false" aria-controls="moreTestimonials">Show More Testimonials</button>
-    </div>
-    <div id="testimonialsDetails" class="collapse" aria-labelledby="testimonialsDetails" data-parent=".pf-details">
-        <div class="card-body">
-            <!-- Additional details can go here -->
-            <p class="card-text" style="font-size: 18px;">Explore more testimonials from our valued customers.</p>
-        </div>
-    </div>
-    <div id="moreTestimonials" class="collapse" aria-labelledby="moreTestimonials" data-parent=".pf-details">
-        <div class="card-body">
-            <div class="testimonial">
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Ambica Pharma's dedication to innovation and customer care sets them apart in the pharmaceutical industry."</p>
-                    <footer class="blockquote-footer">Dr. Emily Johnson, Research Scientist</footer>
-                </blockquote>
-            </div>
-            <div class="testimonial">
-                <blockquote class="blockquote">
-                    <p class="mb-0">"Their support team is responsive and knowledgeable, ensuring smooth collaborations and timely deliveries."</p>
-                    <footer class="blockquote-footer">Ms. Anna Lee, Supply Chain Manager</footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-    </div>
-</section>
-<!-- End Portfolio Details Area -->
-
+    </section>
+ 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
+ 
+    		<!-- Footer Area -->
+		<footer id="footer" class="footer">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Discover excellence in pharmaceutical manufacturing and distribution at Ambica Pharma, where quality meets commitment since 2005.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-instagram"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+											<li><a href="blog-single.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Registered Office</h2>
+								<p>Registered Office : 22 to 25,2nd Floor, 
+									Chapsey Building, 
+									72/78, Shamaldas Gandhi Marg, Kalbadevi, Mumbai, 
+									Maharashtra-400 002</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+							  <h2>Contact us</h2>
+							  <p>
+								<i class="icofont icofont-phone" style="margin-right: 8px;"></i> Mob: +91 9967006091
+							  </p>
+							  <p>
+								<i class="icofont icofont-telephone" style="margin-right: 8px;"></i> Tel: 022 48256677
+							  </p>
+							  <p>ambicapharma@gmail.com</p>
+							 
+							  <p>Subscribe to our newsletter to get all our news in your inbox.</p>
+							  <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
+								<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+							  </form>
+							</div>
+						  </div>
+						  
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2024 | All Rights Reserved by <a href="https://visheshsanghvi.netlify.app" target="_blank">Ambica Pharma</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
 
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/67762568af5bfec1dbe5a9b6/1igio48kg';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 
-
-
-    <!-- Footer Area -->
-    <footer id="footer" class="footer">
-        <!-- Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-footer">
-                            <h2>About Us</h2>
-                            <p>Discover excellence in pharmaceutical manufacturing and distribution at Ambica Pharma, where quality meets commitment since 2005.</p>
-                            <!-- Social -->
-                            <ul class="social">
-                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
-                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                            </ul>
-                            <!-- End Social -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-footer f-link">
-                            <h2>Quick Links</h2>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <ul>
-                                        <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                        <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                        <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
-                                        <li><a href="blog-single.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-footer">
-                            <h2>Registered Office</h2>
-                            <p>Registered Office AMBICA PHARMA
-                                Shop no:22 to 25,2nd Floor, 
-                                Chapsey Building, 
-                                72/78, Shamaldas Gandhi Marg, Kalbadevi, Mumbai, 
-                                Maharashtra-400 002</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-footer">
-                            <h2>Contact us</h2>
-                            <p>Mob: +91 9967006091</p>
-                            <p>ambicapharma@gmail.com</p>
-                            <p>Subscribe to our newsletter to get all our news in your inbox.</p>
-                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                                <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
-                                <button class="button"><i class="icofont icofont-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Footer Top -->
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-12">
-                        <div class="copyright-content">
-                            <p>© Copyright 2024 | All Rights Reserved by <a href="https://visheshsanghvi.netlify.app" target="_blank">Ambica Pharma</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Copyright -->
-    </footer>
-    <!--/ End Footer Area -->
-
-    <!-- jquery Min JS -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jquery Migrate JS -->
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <!-- jquery Ui JS -->
-    <script src="js/jquery-ui.min.js"></script>
-    <!-- Easing JS -->
-    <script src="js/easing.js"></script>
-    <!-- Color JS -->
-    <script src="js/colors.js"></script>
-    <!-- Popper JS -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap Datepicker JS -->
-    <script src="js/bootstrap-datepicker.js"></script>
-    <!-- Jquery Nav JS -->
-    <script src="js/jquery.nav.js"></script>
-    <!-- Slicknav JS -->
-    <script src="js/slicknav.min.js"></script>
-    <!-- ScrollUp JS -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- Niceselect JS -->
-    <script src="js/niceselect.js"></script>
-    <!-- Tilt Jquery JS -->
-    <script src="js/tilt.jquery.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="js/owl-carousel.js"></script>
-    <!-- counterup JS -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Steller JS -->
-    <script src="js/steller.js"></script>
-    <!-- Wow JS -->
-    <script src="js/wow.min.js"></script>
-    <!-- Magnific Popup JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter Up CDN JS -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
-</body>
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
 </html>
